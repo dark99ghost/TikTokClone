@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+.video-container {
+    display: flex;
+    flex-direction: row; /* الفيديو والزرار جنب بعض */
+    align-items: center;
+    justify-content: center; /* توسيط العناصر */
+    width: 100%;
+    height: 100vh;
+}
+#current-video {
+    width: 25%; /* قللنا العرض لـ 25% */
+    max-width: 25%; /* نضمن إن العرض ما يتعداش 25% */
+    height: 100%; /* بطول الشاشة كلها */
+    object-fit: cover;
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* الزرار تحت بعض */
+    margin-right: 20px; /* مسافة بين الفيديو والزرار من اليمين */
+}
+#prev-btn, #next-btn {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px 0; /* مسافة بين الزرار */
+    cursor: pointer;
+}
